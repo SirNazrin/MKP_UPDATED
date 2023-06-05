@@ -111,7 +111,7 @@
                                             <td>-</td>
                                             <td>-</td>
                                             <td>
-                                                <div class = "text-center" style="">
+                                                <div class = "text-center">
                                                     <div class="form-check" >
                                                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                                         </label>
