@@ -1,6 +1,6 @@
 <?php
 
-define('BASEURL' , 'http://localhost/new SDW-MKP/public/');
+define('BASEURL' , 'http://localhost/MKP_UPDATED/public/');
 
 //DB
 define ('DB_HOST', "localhost"); 
