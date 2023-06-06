@@ -49,13 +49,13 @@
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td class="text-center">
-                                                    <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
+                                                    <a class="btn" href="<?= BASEURL ?>/Incentive/IncentiveMainPage" role="button">
                                                         <img src="<?= BASEURL ?>/img/ViewIcon.png" alt="Melihat Permohonan">
                                                     </a>
-                                                    <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
+                                                    <a class="btn" href="<?= BASEURL ?>/Incentive/IncentiveMainPage" role="button">
                                                         <img src="<?= BASEURL ?>/img/EditIcon.png" alt="Kemaskini Permohonan">
                                                     </a>
-                                                    <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
+                                                    <a class="btn" href="<?= BASEURL ?>/Incentive/IncentiveMainPage" role="button">
                                                         <img src="<?= BASEURL ?>/img/DeleteIcon.png" alt="Hapus Permohonan">
                                                     </a>
                                                 </td>
