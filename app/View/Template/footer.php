@@ -4,4 +4,5 @@
 <script src="<?= BASEURL; ?>/js/clock.js"></script>
 <script src="<?= BASEURL; ?>/js/script.js"></script>
 <script src="<?= BASEURL; ?>/js/bootstrap.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
 </html>

@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>css/styling.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>css/clock.css">
-    
+    <link rel="stylesheet" href="<?= BASEURL; ?>css/applyincentive.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>css/mainpageincentive.css">
+   
     <style>
         .body-content{
             background-image: url("<?= BASEURL; ?>/img/BG-JAIP.png");
