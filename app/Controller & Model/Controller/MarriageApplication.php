@@ -6,7 +6,7 @@ class MarriageApplication extends Controller{
 
         $data['title'] = 'Marriage Application';
         $this->view('/Template/header', $data);
-        //$this->view('UserView/UserRegistrationInterface', $data);
+        $this->view('UserView/UserApplyMarriageApplicationInterface', $data);
         $this->view('/Template/footer');
 
     }
