@@ -26,7 +26,7 @@
                     <!--Content Container-->
                     <div class="container-M1" style="background-color: #C7DDFE;">
                         <div style="background-color:#152C7C; color: white;">
-                            <h1 style="padding-left: 12px;">Insentif Khas Pasangan Pengantin</h1> <!--Content Header-->
+                        <h3 class = "pt-2 pb-2 align-middle" style="padding-left: 12px;">Insentif Khas Pasangan Pengantin</h3> <!--Content Header-->
                         </div>
                         <!--Content of container-->
 

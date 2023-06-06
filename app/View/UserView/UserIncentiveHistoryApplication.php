@@ -26,8 +26,9 @@
                         <!--Content Container-->
                         <div class="container-M1" style="background-color: #C7DDFE;">
                             <diV style="background-color:#152C7C; color: white;">
-                            <h3 class = "pt-2 pb-2 align-middle" style="padding-left: 12px;">Insentif</h3> <!--Content Header-->
+                            <h3 class = "pt-2 pb-2 align-middle" style="padding-left: 12px;">INSENTIF</h3> <!--Content Header-->
                             </div>
+                            <a class="btn btn-primary"  style="float: right; margin-right: 10px;" href="<?= BASEURL ?>/Incentive" role="button">Kembali</a>
                                 <div class="container" style = "padding: 20px">
                                 
                                     <h6><b>Sejarah Permohonan Insentif</b></h6>

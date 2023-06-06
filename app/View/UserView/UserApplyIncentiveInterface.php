@@ -27,7 +27,7 @@
                     <!--Content Container-->
                     <div class="container-M1" style="background-color: #C7DDFE;">
                         <diV style="background-color:#152C7C; color: white;">
-                            <h3 class="pt-2 pb-2 align-middle" style="padding-left: 12px;">Permohonan Baru</h3> <!--Content Header-->
+                        <h3 class = "pt-2 pb-2 align-middle" style="padding-left: 12px;">Insentif - Permohonan Baru</h3>
                         </div>
                         <!--Content of container-->
 
@@ -254,6 +254,7 @@
                                         <input type="file" id="document" name="document" accept=".pdf">
                                         <label for="document">Penyata Akaun Bank Pemohon:</label>
                                         <input type="file" id="document" name="document" accept=".pdf">
+                                        <h6>*FORMAT PDF SAHAJA</6>
                                     </div>
                                     <br>
                                     <!-- Add a submit button if needed -->
@@ -264,16 +265,40 @@
                             </form>
 
                             <br>
+
+                            <!-- Add a hidden modal -->
+                            <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="successModalLabel">Permohonan Incentif Dihantar</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Permohonan insentif telah dihantar.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="main-page.html" class="btn btn-primary">Kembali ke Laman Utama</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="button-container">
-                                <input type="button" class="btn btn-primary" value="SETERUSNYA">
+                                <input type="button" class="btn btn-primary" value="HANTAR" onclick="showSuccessModal()">
                                 <input type="button" class="btn btn-primary" onclick="GeneratePdf();" value="CETAK">
                             </div>
+
 
                             <br>
 
 
-
                             <script>
+                                function showSuccessModal() {
+                                    $('#successModal').modal('show'); // Show the success modal
+                                }
                                 // Function to generate a single PDF with the contents of all forms with the ID 'form-print'
                                 function GeneratePdf() {
                                     var forms = document.querySelectorAll('#form-print');
