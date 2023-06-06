@@ -26,9 +26,21 @@
                         <!--Content Container-->
                         <div class="container-M1 mb-2" style="background-color: #C7DDFE;">
                             <diV style="background-color:#152C7C; color: white;">
-                                <h3 class = "pt-2 pb-2 align-middle" style="padding-left: 12px;">Khidmat Nasihat - Memilih Tarikh Dan Pengawai Penasihat</h3> <!--Content Header-->
+                                <h3 class = "pt-2 pb-2 align-middle" style="padding-left: 12px;">Permohonan Berkahwin</h3> <!--Content Header-->
                             </div>
                                 <!--Content of container-->
+                                <div class="list-group list-group-flush">
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <a class="list-group-item list-group-item-action list-group-item-light, col-navbar, selected-navbar" href="<?= BASEURL; ?>/ManageProfile">Persetujuan dan Wakalah Wali</a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="list-group-item list-group-item-action list-group-item-light, col-navbar" href="<?= BASEURL; ?>/PreCourse">Permohonan Ujian Saringan HIV</a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="list-group-item list-group-item-action list-group-item-light, col-navbar" href="<?= BASEURL; ?>/PreCourse">Akuan Permaustautinan</a>
+                                        </div>
+                                    </div>
                             <a class="btn btn-primary"  style="float: right; margin-right: 10px;" href="<?= BASEURL ?>/Consultation" role="button">Kembali</a>
                             <div class="container mt-5">
                                 <div class="row g-5 align-items-center mb-3 mt-2">

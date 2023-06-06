@@ -51,44 +51,34 @@
                                             </tr>
                                     </table>
                                     </div>
-                                    <div>
-                                        <table>
-                                        <tr>
-                                                <td><h4>No. Kad Pengenalan</h4></td>
-                                                <td><h4>:</h4></td>
-                                                <td><h5>1111221121222</h5></td>
-                                                <td><h4>Nama Pemohon</h4></td>
-                                                <td><h4>:</h4></td>
-                                                <td><h5>Ali Bin Abu</h5></td>
-                                            </tr>
-                                            <tr>
-                                                <td><h4>Alamat</h4></td>
-                                                <td><h4>:</h4></td>
-                                                <td><h5>Pekan Pahang</h5></td>
-                                                <td><h4>Jantina</h4></td>
-                                                <td><h4>:</h4></td>
-                                                <td><h5>Lelaki</h5></td>
-                                            </tr>
-                                            <tr>
-                                                <td><h4>No. Telefon</h4></td>
-                                                <td><h4>:</h4></td>
-                                                <td><h5>011-1111111</h5></td>
-                                                <td><h4>Negeri</h4></td>
-                                                <td><h4>:</h4></td>
-                                                <td><h5>Pahang</h5></td>
-                                            </tr>
-                                            <tr>
-                                                <td><h4>Tahap Pendidikan</h4></td>
-                                                <td><h4>:</h4></td>
-                                                <td><h5>Ijazah</h5></td>
-                                                <td><h4>Daerah</h4></td>
-                                                <td><h4>:</h4></td>
-                                                <td><h5>Pekan</h5></td>
-                                            </tr>
-                                        </table>
+                                <div class="container mt-5">
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <h6>No. Kad Pengenalan : </h6>
+                                        </div>
+                                        <div class="col">
+                                            <h6>Nama Pemohon : </h6>
+                                        </div>
                                     </div>
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <h6>No Telefon : </h6>
+                                        </div>
+                                        <div class="col">
+                                            <h6>Negeri : </h6>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <h6>Tahap Pendidikan : </h6>
+                                        </div>
+                                        <div class="col">
+                                            <h6>Daerah : </h6>
+                                        </div>
+                                    </div>
+                                </div>
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col-3">
                                             <div class="container">
                                                 <div class="form-floating mb-1">
                                                     <input type="input" class="form-control" id="floatingInput" placeholder="">
