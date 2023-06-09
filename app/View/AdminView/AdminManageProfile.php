@@ -120,6 +120,8 @@
                                 <input class="form-control" id="User_Status" type="text" placeholder="Status" ><br>
                                 <label for="birthday">Date of Birth</label>
                                 <input class="form-control" id="User_BirthDate" type="date" placeholder="Date of Birth" ><br>
+                                <label for="password"> Passowrd </label>
+					<input type="password" class="form-control" id="SA_Password" placeholder="Enter Password" style="border-radius: 5px;  height:43px ;"><br>
                                 <h6 class="mb-2 pb-1">Gender: </h6>
           
                             <div class="form-check form-check-inline">
