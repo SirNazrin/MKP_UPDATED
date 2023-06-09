@@ -6,7 +6,7 @@ class Incentive extends Controller{
 
         $data['title'] = 'Insentif Khas Pasangan Pengantin';
         $this->view('/Template/headerModule5', $data);
-        $this->view('UserView/IncentiveMainPage', $data);
+        $this->view('UserView/UserIncentiveMainPage', $data);
         $this->view('/Template/footer');
 
     }
