@@ -131,7 +131,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col">
-                                                <a class="btn"  style="float: right; margin-right: 10px; background-color: green; color:white;" href="<?= BASEURL ?>/Consultation" role="button">Kemaskini & Hantar</a>
+                                                <a class="btn"  style="float: right; margin-right: 10px; background-color: green; color:white;" href="<?= BASEURL ?>/MarriageApplication/page2" role="button">Kemaskini & Hantar</a>
                                             </div>
                                         </div>
                                     </div>
