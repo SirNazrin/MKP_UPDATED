@@ -49,7 +49,7 @@
                                             <h5 class="">11. Peserta yang hadir ke kursus juga bendaklah mematuhi langkah-langkah keselamatan yang telah ditetapkan oleh pihak penganjur dan Pejabat Agama Islam Daerah.</h5>
                                             <h5 class="">12. Sebarang masalah berkaitan kursus, sila rujuk/maklum kepada urusetia bertugas. Peserta hendaklah mematuhi segala peraturan dan arahan dari semasa ke semasa oleh urusetia.</h5>
                                             <a class="btn btn-primary"  style="float: right; margin-right: 10px;  color:white;" href="<?= BASEURL ?>/PreCourse/PreCourseView" role="button">Daftar Baru</a>
-                                            <a class="btn btn-primary"  style="float: right; margin-right: 10px; color:white;" href="<?= BASEURL ?>/PreCourse/" role="button">Semak</a>
+                                            <a class="btn btn-primary"  style="float: right; margin-right: 10px; color:white;" href="<?= BASEURL ?>/PreCourse/addPrecourse" role="button">Semak</a>
                                         </div>
                                     </div>
                                 </div>

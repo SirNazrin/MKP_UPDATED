@@ -68,7 +68,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                    <a class="btn btn-primary"  style="float: right; margin-right: 10px;  color:white;" href="<?= BASEURL ?>/MarriageApplication/page4" role="button">Seterusnya</a>
+                                    <a class="btn btn-primary"  style="float: right; margin-right: 10px;  color:white;" href="<?= BASEURL ?>/MarriageApplication/page3" role="button">Seterusnya</a>
                                     </div>
                                 </div>
                             </div>

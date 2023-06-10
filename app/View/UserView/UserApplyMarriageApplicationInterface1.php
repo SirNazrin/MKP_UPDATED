@@ -29,8 +29,10 @@
                                 <h3 class = "pt-2 pb-2 align-middle" style="padding-left: 12px;">Permohonan Berkahwin</h3> <!--Content Header-->
                             </div>
                                 <!--Content of container-->
+                                
                             <div class="container" style="overflow: auto;">
                                 <div class="list-group list-group-flush">
+                        
                                     <div class="row">
                                         <div class="col">
                                             <a class="list-group-item list-group-item-action list-group-item-light, col-navbar, selected-navbar">Persetujuan dan Wakalah Wali</a>
