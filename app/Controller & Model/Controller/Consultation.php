@@ -1,67 +1,101 @@
+
 <?php
 
 class Consultation extends Controller{
 
     public function index(){
 
-        $data['title'] = 'Khidmat Nasihat';
-        $this->view('/Template/header', $data);
-        $this->view('UserView/UserConsultationMainpage', $data);
-        $this->view('/Template/footer');
+        if(isset($_SESSION['user_id'])){
+            $data['title'] = 'Khidmat Nasihat';
+            // $data['user'] = $this->model('user_info')->getUserByIC();
+            $this->view('/Template/header', $data);
+            $this->view('UserView/UserConsultationMainpage', $data);
+            $this->view('/Template/footer');
+        } else {
+            header('Location: ' . BASEURL . '/LogIn');
+        }
 
     }
 
     public function ApplyConsult(){
 
-        $data['title'] = 'Permohonan Khidmat Nasihat';
-        $this->view('/Template/header', $data);
-        $this->view('UserView/UserApplyConsultationInterface', $data);
-        $this->view('/Template/footer');
+        if(isset($_SESSION['user_id'])){
+            $data['title'] = 'Permohonan Khidmat Nasihat';
+            $this->view('/Template/header', $data);
+            $this->view('UserView/UserApplyConsultationInterface', $data);
+            $this->view('/Template/footer');
+        } else {
+            header('Location: ' . BASEURL . '/LogIn');
+        }
 
     }
 
     public function ApplyConsultExtension(){
 
-        $data['title'] = 'Khidmat Nasihat';
-        $this->view('/Template/header', $data);
-        $this->view('UserView/UserApplyConsultationExtensionInteface', $data);
-        $this->view('/Template/footer');
+        if(isset($_SESSION['user_id'])){
+            $data['title'] = 'Khidmat Nasihat';
+            $this->view('/Template/header', $data);
+            $this->view('UserView/UserApplyConsultationExtensionInteface', $data);
+            $this->view('/Template/footer');
+        } else {
+            header('Location: ' . BASEURL . '/LogIn');
+        }
 
     }
 
     public function ViewConsult(){
 
-        $data['title'] = 'Khidmat Nasihat';
-        $this->view('/Template/header', $data);
-        $this->view('UserView/UserConsultationMainpage', $data);
-        $this->view('/Template/footer');
+        if(isset($_SESSION['user_id'])){
+            $data['title'] = 'Khidmat Nasihat';
+            $this->view('/Template/header', $data);
+            $this->view('UserView/UserApplyConsultationExtensionInteface', $data);
+            $this->view('/Template/footer');
+        } else {
+            header('Location: ' . BASEURL . '/LogIn');
+        }
+
+
 
     }
 
     public function EditConsult(){
 
-        $data['title'] = 'Khidmat Nasihat';
-        $this->view('/Template/header', $data);
-        $this->view('UserView/UserConsultationMainpage', $data);
-        $this->view('/Template/footer');
+        if(isset($_SESSION['user_id'])){
+            $data['title'] = 'Khidmat Nasihat';
+            $this->view('/Template/header', $data);
+            $this->view('UserView/UserApplyConsultationExtensionInteface', $data);
+            $this->view('/Template/footer');
+        } else {
+            header('Location: ' . BASEURL . '/LogIn');
+        }
+
 
     }
 
     public function ConsultTimetable(){
 
-        $data['title'] = 'Khidmat Nasihat';
-        $this->view('/Template/header', $data);
-        $this->view('UserView/UserConsultationMainpage', $data);
-        $this->view('/Template/footer');
+        if(isset($_SESSION['user_id'])){
+            $data['title'] = 'Khidmat Nasihat';
+            $this->view('/Template/header', $data);
+            $this->view('UserView/UserApplyConsultationExtensionInteface', $data);
+            $this->view('/Template/footer');
+        } else {
+            header('Location: ' . BASEURL . '/LogIn');
+        }
+
 
     }
 
     public function ConsultReview(){
 
-        $data['title'] = 'Khidmat Nasihat';
-        $this->view('/Template/header', $data);
-        $this->view('UserView/UserConsultationMainpage', $data);
-        $this->view('/Template/footer');
+        if(isset($_SESSION['user_id'])){
+            $data['title'] = 'Khidmat Nasihat';
+            $this->view('/Template/header', $data);
+            $this->view('UserView/UserApplyConsultationExtensionInteface', $data);
+            $this->view('/Template/footer');
+        } else {
+            header('Location: ' . BASEURL . '/LogIn');
+        }
 
     }
 }
