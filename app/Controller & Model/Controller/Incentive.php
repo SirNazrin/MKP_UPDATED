@@ -20,11 +20,11 @@ class Incentive extends Controller{
 
     }
 
-    public function IncentiveHistory(){
+    public function ViewIncentive(){
 
         $data['title'] = 'Sejarah Permohonan Insentif Khas Pasangan Pengantin';
         $this->view('/Template/headerModule5', $data);
-        $this->view('UserView/UserIncentiveHistoryApplication', $data);
+        $this->view('UserView/UserViewIncentiveInterface', $data);
         $this->view('/Template/footer');
 
     }

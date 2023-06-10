@@ -49,7 +49,7 @@
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td class="text-center">
-                                                    <a class="btn" href="<?= BASEURL ?>/Incentive/IncentiveMainPage" role="button">
+                                                    <a class="btn" href="<?= BASEURL ?>/Incentive/UserIncentiveMainPage" role="button">
                                                         <img src="<?= BASEURL ?>/img/ViewIcon.png" alt="Melihat Permohonan">
                                                     </a>
                                                     <a class="btn" href="<?= BASEURL ?>/Incentive/IncentiveMainPage" role="button">

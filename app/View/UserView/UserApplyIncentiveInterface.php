@@ -244,8 +244,9 @@
                                 <br>
                                 <!-- Modal -->
                                 <div class="button-container">
-                                    <input type="button" class="btn btn-primary" value="HANTAR" onclick="showSuccessModal()">
+                                    <input type="button" class="btn btn-danger" value="HANTAR" onclick="showSuccessModal()">
                                     <input type="button" class="btn btn-primary" onclick="GeneratePdf();" value="CETAK">
+                                    <a class="btn btn-primary"  style="float: right;" href="<?= BASEURL ?>/Incentive" role="button">Kembali</a>
                                 </div>
                             </form>
 

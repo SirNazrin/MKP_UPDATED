@@ -55,7 +55,7 @@
 
 
                         <div class="text-right" style="margin-top: 20px;">
-                            <a class="btn btn-primary" href="<?= BASEURL ?>/Incentive/IncentiveHistory" role="button">SEJARAH PERMOHONAN</a>
+                            <a class="btn btn-primary" href="<?= BASEURL ?>/Incentive/ViewIncentive" role="button">SEJARAH PERMOHONAN</a>
 
                             <a class="btn btn-primary" href="<?= BASEURL ?>Incentive/ApplyIncentive" role="button">PERMOHONAN BARU</a>
                         </div>
