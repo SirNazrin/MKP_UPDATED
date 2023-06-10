@@ -3,10 +3,16 @@
 class Home extends Controller{
 
     public function index(){
-        $data['title'] = 'Homepage';
-        $this->view('/Template/headerModule1', $data);
-        $this->view('/Home/index', $data);
-        $this->view('/Template/footer');
+
+        if(isset($_SESSION['user_id'])){
+            $data['title'] = 'Homepage';
+            $this->view('/Template/headerHomepage', $data);
+            $this->view('Home/index', $data);
+            $this->view('/Template/footer');
+        } else {
+            header('Location: ' . BASEURL . '/LogIn');
+        }
+
     }
 
 }
