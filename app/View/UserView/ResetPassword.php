@@ -48,11 +48,7 @@
            width: 120%;
         }
 
-        .link{
-            position:relative; top :80px;
-
-
-        }
+       
         
     </style>
 </head>
@@ -67,34 +63,25 @@
 </div>
 
     <div class="right-column">
-    <h1 style="position:relative; right:40px;  position:relative; top :80px;
-        "> Login </h1>
+    <h1 style="position:relative; right:120px;  position:relative; top :80px;
+        "> Reset Password </h1>
     <div class="form">
     <form action="">      
-<input type="email" class="form-control" id="floatingInput" placeholder="No. Kad Pengenalan">
-<label for="floatingInput">	</label>
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Enter New Password">
+<label for="floatingPassword"></label>
 
 
-<input type="password" class="form-control" id="floatingPassword" placeholder="Kala Laluan">
+<input type="password" class="form-control" id="floatingPassword" placeholder="Confirm Password">
 <label for="floatingPassword"></label>
 <br>
 
-<select class="form-select form-select-sm" id="User_Gendar" aria-label=".form-select-sm example">
-    <option selected>Role</option>
-    <option value="1">User</option>
-    <option value="2">Admin</option>
-    <option value="3">Staff</option>
-    <option value="4">Advisor</option>
-  </select>
+
   
 </form>             
-                  <div class="link">
-                   <a href="<?= BASEURL; ?>/Register" class="button-link">Pennngguna baru? </a>
-                    <a href="<?= BASEURL; ?>/LogIn/ResetPassword" class="button-link">| Lupa kala Laluan?</a>
-                </div>
+                 
 </div>
 
-<input class="btn btn-primary" type="submit" value="Masuk" style=" position:relative; right :190px;
+<input class="btn btn-primary" type="submit" value="Reset" style=" position:relative; right :190px;
             position:relative; top :100px; width: 120%">
                  
     </div>

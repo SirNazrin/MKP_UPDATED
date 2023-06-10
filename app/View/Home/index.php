@@ -17,6 +17,9 @@
                 <a href="<?= BASEURL ?>/MarriageRegistration/" class="btn btn-primary btn-lg m-2">Pendaftaran Perkahwinan</a>
                 <a href="<?= BASEURL ?>/Consultation/" class="btn btn-primary btn-lg m-2">Khidmat Nasihat</a>
                 <a href="<?= BASEURL ?>/Incentive/" class="btn btn-primary btn-lg m-2">Insentif</a>
+                <a href="<?= BASEURL ?>/Admin/" class="btn btn-primary btn-lg m-2">Admin</a>
+                <a href="<?= BASEURL ?>/Staff/" class="btn btn-primary btn-lg m-2">Staff</a>
+                <a href="<?= BASEURL ?>/Advisor/" class="btn btn-primary btn-lg m-2">Advisor</a>
               </div>       
               </div>
             </div>
