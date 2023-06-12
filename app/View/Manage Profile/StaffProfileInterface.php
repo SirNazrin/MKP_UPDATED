@@ -70,7 +70,8 @@ body {
 <body>
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
-
+            <div class="border-end bg-white" id="sidebar-wrapper">
+               
                 <div class="list-group list-group-flush">
                     <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar, selected-navbar" href="<?= BASEURL; ?>/ManageProfile">Profile</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="<?= BASEURL; ?>/PreCourse">Kursus Pra-Perkahwinan</a>
@@ -105,8 +106,8 @@ body {
 				<div class="user-avatar">
                 <img src="<?= BASEURL ?>/img/user.png" alt="">
 				</div>
-				<h5 class="user-name" id="Staff_Name">ABDULRAHMAN ALYAFEI</h5>
-				<h6 class="user-email" id="Staff_Email">Abdulrahman.bin.gh@gmail.com</h6>
+				<h5 class="user-name" id="Staff_Name"><?= $data['user']['User_Name']; ?></h5>
+				<h6 class="user-email" id="Staff_Email"><?= $data['user']['User_Name']; ?></h6>
 			</div>
 			<div class="about">
 				
@@ -151,29 +152,6 @@ body {
                                   </select>
                                   <label for="phone"> Phone number </label>
                     <input class="form-control" id="Staff_PhoneNo" type="text" placeholder="Enter Phone Number" style="position:relative; top:22px;" >
-				</div>
-			</div>
-		</div>
-		<div class="row gutters">
-			
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					
-				</div>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					
-				</div>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					
-				</div>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					
 				</div>
 			</div>
 		</div>

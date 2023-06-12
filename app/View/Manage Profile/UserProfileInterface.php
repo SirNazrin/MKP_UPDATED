@@ -106,7 +106,7 @@ body {
                 <img src="<?= BASEURL ?>/img/user.png" alt="">
 				</div>
 				<h5 class="user-name" id="User_Name" ><?= $data['user']['User_Name']; ?></h5>
-				<h6 class="user-email" id="SA_Email" ><?= $data['user']['User_Email']; ?></h6>
+				<h6 class="user-email" id="User_Email" ><?= $data['user']['User_Email']; ?></h6>
 			</div>
 			<div class="about">
 				
@@ -123,7 +123,7 @@ body {
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 				<div class="form-group">
 					<label for="fullName">Full Name</label>
-					<input type="text" class="form-control" id="User_Name" placeholder="Enter full name">
+					<input type="text" class="form-control" id="User_Name" placeholder="Enter full name" >
 				</div>
 			</div>
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
