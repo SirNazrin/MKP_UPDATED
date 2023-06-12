@@ -18,6 +18,8 @@ class Incentive extends Controller{
 
         if(isset($_SESSION['user_id'])){
             $data['title'] = 'Permohonan Insentif Khas Pasangan Pengantin';
+            $data['user'] = $this->model('User_Info')->getUserByIC($_SESSION['user_id']);
+            $data['userpartner'] = $this->model('UserPartner_Info')->getUserPartnerByIC();
             $this->view('/Template/headerModule5', $data);
             $this->view('Manage Incentive/UserApplyIncentive', $data);
             $this->view('/Template/footer');
@@ -31,6 +33,8 @@ class Incentive extends Controller{
 
         if(isset($_SESSION['user_id'])){
             $data['title'] = 'Sejarah Permohonan Insentif Khas Pasangan Pengantin';
+            $data['user'] = $this->model('User_Info')->getUserByIC($_SESSION['user_id']);
+            $data['incentive'] = $this->model('incentive_application')->getIncentiveInfoByUserIC();
             $this->view('/Template/headerModule5', $data);
             $this->view('Manage Incentive/UserIncentiveAppHistory', $data);
             $this->view('/Template/footer');

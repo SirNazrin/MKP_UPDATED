@@ -3,10 +3,7 @@
     <div class="d-flex" id="wrapper">
         <!-- Sidebar-->
         <div class="border-end bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading" style="background-color: #91BCFD;" ;>
-                <p><b>ID : </b></p>
-                <p><b>NAME : </b></p>
-            </div>
+            
             <div class="list-group list-group-flush">
                 <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="<?= BASEURL; ?>/ManageProfile">Profile</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="<?= BASEURL; ?>/PreCourse">Kursus Pra-Perkahwinan</a>
@@ -52,7 +49,7 @@
                                     <!-- Form for "Maklumat Pemohon" -->
                                     <div class="form-group">
                                         <label for="inputIC">No. Kad Pengenalan</label>
-                                        <input type="number" class="form-control" id="inputIC" placeholder="Masukkan no. kad pengenalan">
+                                        <input type="number" class="form-control" id="inputIC" value = "<?= $data['user'] ['UserIC'];?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="inputnoPassport">No. Passport/Tentera/Polis</label>
@@ -68,7 +65,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="inputName">Nama Pemohon</label>
-                                        <input type="text" class="form-control" id="inputName" placeholder="Masukkan nama pemohon">
+                                        <input type="text" class="form-control" id="inputName" value = "<?= $data['user'] ['User_Name'];?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="inputAddress">Alamat Semasa</label>
