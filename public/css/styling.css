@@ -11080,4 +11080,9 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     button[type="submit"]:hover {
       background-color: #0069d9;
     }
+
+    .selected-navbar2{
+      background-color: green;
+      color: white;
+    }
     

@@ -5,7 +5,29 @@ class Consultation extends Controller{
 
     public function index(){
 
-        if(isset($_SESSION['user_id'])){
+        if($_SESSION['role'] == "ADMIN"){
+            $data['title'] = 'Admin';
+            $data['user'] = $this->model('User_Info')->getUserByIC($_SESSION['user_id']);
+            $this->view('/Template/header', $data);
+            $this->view('Manage Consultation/UserApplyConsultation', $data);
+            $this->view('/Template/footer');
+        }
+        else if($_SESSION['role'] == "ADVISOR"){
+            $data['title'] = 'Advisor';
+            $data['user'] = $this->model('User_Info')->getUserByIC($_SESSION['user_id']);
+            $this->view('/Template/header', $data);
+            $this->view('Manage Profile/AdvisorProfileInterface', $data);
+            $this->view('/Template/footer');
+        }
+        else if($_SESSION['role'] == "STAFF"){
+            $data['title'] = 'Khidmat Nasihat';
+            $data['user'] = $this->model('User_Info')->getUserByIC($_SESSION['user_id']);
+            $data['consult'] = $this->model('Consultation_Registration')->getConsultInfoByUserIC();
+            $this->view('/Template/header', $data);
+            $this->view('Manage Consultation/StaffConsultationApplicationList', $data);
+            $this->view('/Template/footer');
+        }
+        else{
             $data['title'] = 'Khidmat Nasihat';
             $data['user'] = $this->model('User_Info')->getUserByIC($_SESSION['user_id']);
             $data['userpartner'] = $this->model('UserPartner_Info')->getUserPartnerByIC();
@@ -13,8 +35,6 @@ class Consultation extends Controller{
             $this->view('/Template/header', $data);
             $this->view('Manage Consultation/UserConsultationMainpage', $data);
             $this->view('/Template/footer');
-        } else {
-            header('Location: ' . BASEURL . '/LogIn');
         }
 
     }
