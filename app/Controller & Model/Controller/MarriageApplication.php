@@ -7,7 +7,7 @@ class MarriageApplication extends Controller{
         if(isset($_SESSION['user_id'])){
             $data['title'] = 'Marriage Application';
             $this->view('/Template/header', $data);
-            $this->view('UserView/UserApplyMarriageApplicationInterface1', $data);
+            $this->view('Manage MarriageApplication/UserApplyMarriageApplicationInterface1', $data);
             $this->view('/Template/footer');
         } else {
             header('Location: ' . BASEURL . '/LogIn');
@@ -20,7 +20,7 @@ class MarriageApplication extends Controller{
         if(isset($_SESSION['user_id'])){
             $data['title'] = 'Marriage Application';
             $this->view('/Template/header', $data);
-            $this->view('UserView/UserApplyMarriageApplicationInterface2', $data);
+            $this->view('Manage MarriageApplication/UserApplyMarriageApplicationInterface2', $data);
             $this->view('/Template/footer');
         } else {
             header('Location: ' . BASEURL . '/LogIn');
@@ -34,7 +34,7 @@ class MarriageApplication extends Controller{
         if(isset($_SESSION['user_id'])){
             $data['title'] = 'Marriage Application';
             $this->view('/Template/header', $data);
-            $this->view('UserView/UserApplyMarriageApplicationInterface3', $data);
+            $this->view('Manage MarriageApplication/UserApplyMarriageApplicationInterface3', $data);
             $this->view('/Template/footer');
         } else {
             header('Location: ' . BASEURL . '/LogIn');
@@ -47,7 +47,7 @@ class MarriageApplication extends Controller{
         if(isset($_SESSION['user_id'])){
             $data['title'] = 'Marriage Application';
             $this->view('/Template/header', $data);
-            $this->view('UserView/UserApplyMarriageApplicationInterface4', $data);
+            $this->view('Manage MarriageApplication/UserApplyMarriageApplicationInterface4', $data);
             $this->view('/Template/footer');
         } else {
             header('Location: ' . BASEURL . '/LogIn');

@@ -9,7 +9,7 @@ class LogIn extends Controller{
         } else {
             $data['title'] = 'Login';
             $this->view('/Template/headerModule1', $data);
-            $this->view('UserView/UserLoginInterface', $data);
+            $this->view('Manage Registration/UserLoginInterface', $data);
             $this->view('/Template/footer');
         }
     }

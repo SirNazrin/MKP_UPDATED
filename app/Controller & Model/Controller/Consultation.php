@@ -7,9 +7,10 @@ class Consultation extends Controller{
 
         if(isset($_SESSION['user_id'])){
             $data['title'] = 'Khidmat Nasihat';
-            // $data['user'] = $this->model('user_info')->getUserByIC();
+            $data['user'] = $this->model('User_Info')->getUserByIC();
+            $data['userpartner'] = $this->model('UserPartner_Info')->getUserPartnerByIC();
             $this->view('/Template/header', $data);
-            $this->view('UserView/UserConsultationMainpage', $data);
+            $this->view('Manage Consultation/UserConsultationMainpage', $data);
             $this->view('/Template/footer');
         } else {
             header('Location: ' . BASEURL . '/LogIn');
@@ -22,7 +23,7 @@ class Consultation extends Controller{
         if(isset($_SESSION['user_id'])){
             $data['title'] = 'Permohonan Khidmat Nasihat';
             $this->view('/Template/header', $data);
-            $this->view('UserView/UserApplyConsultationInterface', $data);
+            $this->view('Manage Consultation/UserApplyConsultationInterface', $data);
             $this->view('/Template/footer');
         } else {
             header('Location: ' . BASEURL . '/LogIn');
@@ -35,7 +36,7 @@ class Consultation extends Controller{
         if(isset($_SESSION['user_id'])){
             $data['title'] = 'Khidmat Nasihat';
             $this->view('/Template/header', $data);
-            $this->view('UserView/UserApplyConsultationExtensionInteface', $data);
+            $this->view('Manage Consultation/UserApplyConsultationExtensionInteface', $data);
             $this->view('/Template/footer');
         } else {
             header('Location: ' . BASEURL . '/LogIn');
@@ -48,7 +49,7 @@ class Consultation extends Controller{
         if(isset($_SESSION['user_id'])){
             $data['title'] = 'Khidmat Nasihat';
             $this->view('/Template/header', $data);
-            $this->view('UserView/UserApplyConsultationExtensionInteface', $data);
+            $this->view('Manage Consultation/UserApplyConsultationExtensionInteface', $data);
             $this->view('/Template/footer');
         } else {
             header('Location: ' . BASEURL . '/LogIn');
@@ -63,7 +64,7 @@ class Consultation extends Controller{
         if(isset($_SESSION['user_id'])){
             $data['title'] = 'Khidmat Nasihat';
             $this->view('/Template/header', $data);
-            $this->view('UserView/UserApplyConsultationExtensionInteface', $data);
+            $this->view('Manage Consultation/UserApplyConsultationExtensionInteface', $data);
             $this->view('/Template/footer');
         } else {
             header('Location: ' . BASEURL . '/LogIn');
@@ -77,7 +78,7 @@ class Consultation extends Controller{
         if(isset($_SESSION['user_id'])){
             $data['title'] = 'Khidmat Nasihat';
             $this->view('/Template/header', $data);
-            $this->view('UserView/UserApplyConsultationExtensionInteface', $data);
+            $this->view('Manage Consultation/UserApplyConsultationExtensionInteface', $data);
             $this->view('/Template/footer');
         } else {
             header('Location: ' . BASEURL . '/LogIn');
@@ -91,7 +92,7 @@ class Consultation extends Controller{
         if(isset($_SESSION['user_id'])){
             $data['title'] = 'Khidmat Nasihat';
             $this->view('/Template/header', $data);
-            $this->view('UserView/UserApplyConsultationExtensionInteface', $data);
+            $this->view('Manage Consultation/UserApplyConsultationExtensionInteface', $data);
             $this->view('/Template/footer');
         } else {
             header('Location: ' . BASEURL . '/LogIn');
