@@ -1,4 +1,5 @@
 <body>
+        
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
             <div class="border-end bg-white" id="sidebar-wrapper">
@@ -66,7 +67,7 @@
                                 <a class="btn btn-primary"  style="margin-bottom: 8px; float: right;" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">Permohonan Baru</a>
                                     <h6><b>Sejarah Permohonan</b></h6>
                                     <?php
-                                        if(isset($data['consult']['ConsultRegID'])){
+                                        if(!isset($data['consult']['ConsultationRegID'])){
                                             echo '
                                             
                                             <table class="table table-bordered">
@@ -113,9 +114,8 @@
                                         </table>
                                             
                                             ';
-                                        exit;
                                         }
-                                    ?>
+                                    else {?>
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr class="table-dark">
@@ -131,9 +131,9 @@
                                         <tbody>
                                             <tr class="table-light">
                                                 <th scope="row">-</th>
-                                                <td>-</td>
-                                                <td>-</td>
-                                                <td>-</td>
+                                                <td><?= $data['consult']['ConsultationRegID']?> - <?= $data['user']['User_Name']?></td>
+                                                <td><?= $data['consult']['ConsultationRegDate']?></td>
+                                                <td><?= $data['consult']['ConsultationStatus']?></td>
                                                 <td class="text-center">
                                                     <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
                                                         <img src="<?= BASEURL ?>/img/ViewIcon.png" alt="Melihat Permohonan">
@@ -158,6 +158,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <?php } ?>
                                 </div>
                             </div>
                         </diV>
