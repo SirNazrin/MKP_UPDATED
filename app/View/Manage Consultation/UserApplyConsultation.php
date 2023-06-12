@@ -2,10 +2,6 @@
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
             <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading" style="background-color: #91BCFD;";>
-                    <p><b>ID : </b></p>
-                    <p><b>NAME : </b></p>
-                </div>
                 <div class="list-group list-group-flush">
                     <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="<?= BASEURL; ?>/ManageProfile">Profile</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="<?= BASEURL; ?>/PreCourse">Kursus Pra-Perkahwinan</a>
@@ -131,7 +127,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col">
-                                                <a class="btn"  style="float: right; margin-right: 10px; background-color: green; color:white;" href="<?= BASEURL ?>/MarriageApplication/page2" role="button">Kemaskini & Hantar</a>
+                                                <a class="btn" onclick = "return confirm('Sudai selesai? Kelik Okay untuk Kemaskini & Hantar, Kelik Cancel sekiranya belum selesai');" style="float: right; margin-right: 10px; background-color: green; color:white;" href="<?= BASEURL ?>/Consultation/" role="button">Kemaskini & Hantar</a>
                                             </div>
                                         </div>
                                     </div>

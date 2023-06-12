@@ -27,7 +27,7 @@
                             <h3 class = "pt-2 pb-2 align-middle" style="padding-left: 12px;">Khidmat Nasihat</h3> <!--Content Header-->
                             </div>
                                 <!--Content of container-->
-                                <a class="btn btn-primary"  style="float: right; margin-right: 10px;" href="<?= BASEURL ?>/Home" role="button">Kembali</a>
+                                <a onclick = "return confirm('Kembali Ke Halaman Utama?');" class="btn btn-primary"  style="float: right; margin-right: 10px;" href="<?= BASEURL ?>/Home" role="button">Kembali</a>
                             <div >
                                 <div class="container mt-5">
                                     <div class="row mb-3">
@@ -130,18 +130,18 @@
                                         </thead>
                                         <tbody>
                                             <tr class="table-light">
-                                                <th scope="row">-</th>
-                                                <td><?= $data['consult']['ConsultationRegID']?> - <?= $data['user']['User_Name']?></td>
+                                                <th scope="row">1.</th>
+                                                <td>KN-000<?= $data['consult']['ConsultationRegID']?> - <?= $data['user']['User_Name']?></td>
                                                 <td><?= $data['consult']['ConsultationRegDate']?></td>
                                                 <td><?= $data['consult']['ConsultationStatus']?></td>
                                                 <td class="text-center">
-                                                    <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
+                                                    <a class="btn" href="<?= BASEURL ?>/Consultation/ViewConsult" role="button">
                                                         <img src="<?= BASEURL ?>/img/ViewIcon.png" alt="Melihat Permohonan">
                                                     </a>
-                                                    <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
+                                                    <a class="btn" onclick = "return confirm('Anda ingin KEMASKINI permohonan ini?');" href="<?= BASEURL ?>/Consultation/EditConsult" role="button">
                                                         <img src="<?= BASEURL ?>/img/EditIcon.png" alt="Kemaskini Permohonan">
                                                     </a>
-                                                    <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
+                                                    <a class="btn" onclick = "return confirm('Anda pasti untuk HAPUSKAN permohonan ini?');" href="<?= BASEURL ?>/Consultation/DeleteConsult" role="button">
                                                         <img src="<?= BASEURL ?>/img/DeleteIcon.png" alt="Hapus Permohonan">
                                                     </a>
                                                 </td>
@@ -151,7 +151,7 @@
                                                     </a>
                                                 </td>
                                                 <td class="text-center">
-                                                    <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
+                                                    <a class="btn" href="<?= BASEURL ?>/Consultation/ConsultReview" role="button">
                                                         <img src="<?= BASEURL ?>/img/ReviewIcon.png" alt="Melihat Ulasan">
                                                     </a>
                                                 </td>
@@ -166,4 +166,5 @@
                 </div>
             </div>
         </div>
+</div>
 </body>
