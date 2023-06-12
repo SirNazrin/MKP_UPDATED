@@ -1,8 +1,8 @@
 <?php
 
-class User_Info{
+class Consultation_Registration{
 
-    private $table = 'User_Info';
+    private $table = 'Consultation_Registration';
     private $db;
 
     public function __construct(){
@@ -10,13 +10,14 @@ class User_Info{
         $this->db = new Database;
 
     }
-
-    public function getUserByIC($UserIC){
+    public function getConsultInfoByUserIC(){
 
         $this->db->query('SELECT * FROM ' . $this->table . ' WHERE UserIC=:UserIC');
-        $this->db->bind('UserIC', $UserIC);
+        $this->db->bind('UserIC', $_SESSION['user_id']);
         return $this->db->single();
     }
+
+    
 
 }
 

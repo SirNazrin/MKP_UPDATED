@@ -8,24 +8,28 @@ class ManageProfile extends Controller{
 
             if($_SESSION['role'] == "ADMIN"){
                 $data['title'] = 'Admin';
+                $data['user'] = $this->model('User_Info')->getUserByIC($_SESSION['user_id']);
                 $this->view('/Template/header', $data);
                 $this->view('Manage Profile/AdminManageProfile', $data);
                 $this->view('/Template/footer');
             }
             else if($_SESSION['role'] == "ADVISOR"){
                 $data['title'] = 'Advisor';
+                $data['user'] = $this->model('User_Info')->getUserByIC($_SESSION['user_id']);
                 $this->view('/Template/header', $data);
                 $this->view('Manage Profile/AdvisorProfileInterface', $data);
                 $this->view('/Template/footer');
             }
             else if($_SESSION['role'] == "STAFF"){
                 $data['title'] = 'Staff';
+                $data['user'] = $this->model('User_Info')->getUserByIC($_SESSION['user_id']);
                 $this->view('/Template/header', $data);
                 $this->view('Manage Profile/StaffProfileInterface', $data);
                 $this->view('/Template/footer');
             }
             else{
                 $data['title'] = ' User Profile';
+                $data['user'] = $this->model('User_Info')->getUserByIC($_SESSION['user_id']);
                 $this->view('/Template/header', $data);
                 $this->view('Manage Profile/UserProfileInterface', $data);
                 $this->view('/Template/footer');

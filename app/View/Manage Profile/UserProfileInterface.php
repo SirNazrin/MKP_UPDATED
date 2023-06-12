@@ -109,8 +109,8 @@ body {
 				<div class="user-avatar">
                 <img src="<?= BASEURL ?>/img/user.png" alt="">
 				</div>
-				<h5 class="user-name" id="User_Name" >ABDULRAHMAN ALYAFEI</h5>
-				<h6 class="user-email" id="SA_Email" >Abdulrahman.bin.gh@gmail.com</h6>
+				<h5 class="user-name" id="User_Name" ><?= $data['user']['User_Name']; ?></h5>
+				<h6 class="user-email" id="SA_Email" ><?= $data['user']['User_Email']; ?></h6>
 			</div>
 			<div class="about">
 				

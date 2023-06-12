@@ -65,8 +65,57 @@
                                 <div class="container" style = "padding: 20px">
                                 <a class="btn btn-primary"  style="margin-bottom: 8px; float: right;" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">Permohonan Baru</a>
                                     <h6><b>Sejarah Permohonan</b></h6>
-
-                                    
+                                    <?php
+                                        if(isset($data['consult']['ConsultRegID'])){
+                                            echo '
+                                            
+                                            <table class="table table-bordered">
+                                            <thead>
+                                                <tr class="table-dark">
+                                                <th class = "w-10" scope="col">Bil</th>
+                                                <th class = "w-25" scope="col">No.Slip Permohonan</th>
+                                                <th class = "w-20" scope="col">Tarikh Mohon</th>
+                                                <th class = "w-25" scope="col">Status</th>
+                                                <th class = "w-20" scope="col">Operasi</th>
+                                                <th class = "w-20" scope="col">Pilih Cara</th>
+                                                <th class = "w-20" scope="col">Ulasan</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="table-light">
+                                                    <th scope="row">-</th>
+                                                    <td>Tiada Sejarah Permohonan</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td class="text-center">
+                                                        <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
+                                                            
+                                                        </a>
+                                                        <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
+                                                            
+                                                        </a>
+                                                        <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
+                                                            
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsultExtension" role="button">
+                                                            
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
+                                                            
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                            
+                                            ';
+                                        exit;
+                                        }
+                                    ?>
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr class="table-dark">

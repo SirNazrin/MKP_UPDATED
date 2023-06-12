@@ -7,8 +7,9 @@ class Consultation extends Controller{
 
         if(isset($_SESSION['user_id'])){
             $data['title'] = 'Khidmat Nasihat';
-            $data['user'] = $this->model('User_Info')->getUserByIC();
+            $data['user'] = $this->model('User_Info')->getUserByIC($_SESSION['user_id']);
             $data['userpartner'] = $this->model('UserPartner_Info')->getUserPartnerByIC();
+            $data['consult'] = $this->model('Consultation_Registration')->getConsultInfoByUserIC();
             $this->view('/Template/header', $data);
             $this->view('Manage Consultation/UserConsultationMainpage', $data);
             $this->view('/Template/footer');

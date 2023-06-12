@@ -21,7 +21,6 @@ class LogIn extends Controller{
         
         $result = $this->model('User_Info')->getUserByIC($UserIC);
 
-
         if (password_verify($result['User_Password'], $hash)) {
 
             
