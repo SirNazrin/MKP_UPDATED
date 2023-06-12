@@ -7,7 +7,7 @@ class PreCourse extends Controller{
         if(isset($_SESSION['user_id'])){
             $data['title'] = 'Kursus Pra-Perkahwinan';
             $this->view('/Template/header', $data);
-            $this->view('UserView/UserPreCourseMainpageInterface', $data);
+            $this->view('Manage PreCourse/UserPreCourseMainpageInterface', $data);
             $this->view('/Template/footer');
         } else {
             header('Location: ' . BASEURL . '/LogIn');
@@ -23,7 +23,7 @@ class PreCourse extends Controller{
         if(isset($_SESSION['user_id'])){
             $data['title'] = 'Daftar Kursus';
             $this->view('/Template/header', $data);
-            $this->view('UserView/UserApplyPreCourseInterface', $data);
+            $this->view('Manage PreCourse/UserApplyPreCourseInterface', $data);
             $this->view('/Template/footer');
         } else {
             header('Location: ' . BASEURL . '/LogIn');
@@ -38,7 +38,7 @@ class PreCourse extends Controller{
         if(isset($_SESSION['user_id'])){
             $data['title'] = 'Kursus Pra-Perkahwinan';
             $this->view('/Template/header', $data);
-            $this->view('UserView/UserViewPreCourseInterface', $data);
+            $this->view('Manage PreCourse/UserViewPreCourseInterface', $data);
             $this->view('/Template/footer');
     
         } else {

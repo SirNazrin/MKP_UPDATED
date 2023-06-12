@@ -2,10 +2,7 @@
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
             <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading" style="background-color: #91BCFD;";>
-                    <p><b>ID : </b></p>
-                    <p><b>NAME : </b></p>
-                </div>
+        
                 <div class="list-group list-group-flush">
                     <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="<?= BASEURL; ?>/ManageProfile">Profile</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="<?= BASEURL; ?>/PreCourse">Kursus Pra-Perkahwinan</a>
@@ -42,32 +39,34 @@
                                     </div>
                                     <div class="row mb-3">
                                         <div class="col">
-                                            <h6>Name : </h6>
+                                            <h6>Name : <?= $data['user']['User_Name']; ?></h6>
                                         </div>
                                         <div class="col">
-                                            <h6>Name : </h6>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="col">
-                                            <h6>No. Kad Pengenalan : </h6>
-                                        </div>
-                                        <div class="col">
-                                            <h6>No. Kad Pengenalan : </h6>
+                                            <h6>Name : <?= $data['userpartner']['UserPartner_Name']; ?> </h6>
                                         </div>
                                     </div>
                                     <div class="row mb-3">
                                         <div class="col">
-                                            <h6>No. Telefon Bimbit : </h6>
+                                            <h6>No. Kad Pengenalan : <?= $data['user']['UserIC']; ?></h6>
                                         </div>
                                         <div class="col">
-                                            <h6>No. Telefon Bimbit : </h6>
+                                            <h6>No. Kad Pengenalan : <?= $data['userpartner']['UserPartnerIC']; ?> </h6>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <h6>No. Telefon Bimbit : <?= $data['user']['User_PhoneNo']; ?></h6>
+                                        </div>
+                                        <div class="col">
+                                            <h6>No. Telefon Bimbit :  <?= $data['userpartner']['UserPartner_PhoneNum']; ?></h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="container" style = "padding: 20px">
                                 <a class="btn btn-primary"  style="margin-bottom: 8px; float: right;" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">Permohonan Baru</a>
                                     <h6><b>Sejarah Permohonan</b></h6>
+
+                                    
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr class="table-dark">

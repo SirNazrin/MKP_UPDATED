@@ -110,7 +110,7 @@ body {
 				<div class="user-avatar">
                 <img src="<?= BASEURL ?>/img/user.png" alt="">
 				</div>
-				<h5 class="user-name">ABDULRAHMAN ALYAFEI</h5>
+				<h5 class="user-name"></h5>
 				<h6 class="user-email">Abdulrahman.bin.gh@gmail.com</h6>
 			</div>
 			<div class="about">

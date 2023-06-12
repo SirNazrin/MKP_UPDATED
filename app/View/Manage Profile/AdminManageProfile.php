@@ -54,10 +54,10 @@
                                         <td></td>
                                         <td></td>
                                         <td class="text-center"> 
-                                        <a class="btn" href="<?= BASEURL ?>Admin/EditProfile" role="button">
+                                        <a class="btn" href="<?= BASEURL ?>ManageProfile/EditProfile" role="button">
                                                         <img src="<?= BASEURL ?>/img/EditIcon.png" alt="">
                                                     </a>
-                                                    <a class="btn" href="<?= BASEURL ?>" role="button">
+                                                    <a class="btn" href="<?= BASEURL ?>ManageProfile/" role="button">
                                                         <img src="<?= BASEURL ?>/img/DeleteIcon.png" alt="Hapus Permohonan">
                                                     </a>
 
