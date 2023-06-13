@@ -29,6 +29,7 @@
                             <h3 class = "pt-2 pb-2 align-middle" style="padding-left: 12px;">Krusus Pra Perkahwinan</h3> <!--Content Header-->
                             </div>
                                 <!--Content of container-->
+                        <form onsubmit="AddCourse()" id="upload" enctype="text/plain" class="form-control" method="post">
                             <div >
                             <div class="container mt-5">
                                 <div class="row mb-3">
@@ -44,33 +45,19 @@
                                                     </datalist>
                                                 </div>
                                                 <div class="form-floating mb-1">
-                                                    <input type="text" class="form-control" id="" placeholder="Alamat">
-                                                    <label for="">Alamat</label>
-                                                </div>
-                                                <div class="form-floating mb-1">
-                                                <input type="text" id="Daerah" list="daerah" placeholder="Sila Pilih Daerah">
-                                                    <datalist id="daerah">
-                                                        <option value="Selatan">
-                                                        <option value="Utara">
-                                                        <option value="Timur">
-                                                        <option value="Barat">
-                                                    </datalist>
-                                                </div>
-                                                <div class="form-floating mb-1">
                                                     <input type="text" class="form-control" id="" placeholder="No telefon">
                                                     <label for="">No Telefon</label>
                                                 </div>
                                             </div>
                                 </div>
                                 <div class="container" style = "padding: 20px">
-                                <a class="btn btn-primary"  style="margin-bottom: 8px; float: right;" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">Simpan</a>
+                                <a class="btn btn-primary"  style="margin-bottom: 8px; float: right;" onclick="showNotification()" role="button">Tambah</a>
+                        </form>
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr class="table-dark">
                                             <th class = "w-10" scope="col">Bil</th>
-                                            <th class = "w-25" scope="col">Nama Tempat/th>
-                                            <th class = "w-20" scope="col">Alamat</th>
-                                            <th class = "w-25" scope="col">Daerah</th>
+                                            <th class = "w-25" scope="col">Nama Tempat</th>
                                             <th class = "w-20" scope="col">No Telefon</th>
                                             <th class = "w-20" scope="col">Operasi</th>
                                             <th class = "w-20" scope="col">Ulasan</th>
@@ -82,14 +69,12 @@
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td>-</td>
-                                                <td>-</td>
-                                                <td>-</td>
                                                 <td class="text-center">
-                                                    <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
-                                                        <img src="<?= BASEURL ?>/img/EditIcon.png" alt="Kemaskini Permohonan">
+                                                    <a class="btn" href="<?= BASEURL ?>/PreCourse/addPrecourseInfo" role="button">
+                                                        <img src="<?= BASEURL ?>/img/EditIcon.png" alt="Kemaskini">
                                                     </a>
-                                                    <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
-                                                        <img src="<?= BASEURL ?>/img/DeleteIcon.png" alt="Hapus Permohonan">
+                                                    <a class="btn" href="<?= BASEURL ?>" role="button">
+                                                        <img src="<?= BASEURL ?>/img/DeleteIcon.png" alt="buang">
                                                     </a>
                                                 </td>
                                             </tr>
@@ -97,6 +82,7 @@
                                     </table>
                                 </div>
                             </div>
+                        
                         </diV>
                     </div>
                 </div>

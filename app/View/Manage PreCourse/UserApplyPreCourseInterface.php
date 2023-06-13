@@ -51,6 +51,7 @@
                                             </tr>
                                     </table>
                                     </div>
+                            <form onsubmit="ApplyPreCourse()" id="upload" enctype="text/plain" class="form-control" method="post">
                                 <div class="container mt-5">
                                     <div class="row mb-3">
                                         <div class="col">
@@ -65,15 +66,12 @@
                                             <h6>No Telefon : </h6>
                                         </div>
                                         <div class="col">
-                                            <h6>Negeri : </h6>
+                                            <h6>Alamat : </h6>
                                         </div>
                                     </div>
                                     <div class="row mb-3">
                                         <div class="col">
                                             <h6>Tahap Pendidikan : </h6>
-                                        </div>
-                                        <div class="col">
-                                            <h6>Daerah : </h6>
                                         </div>
                                     </div>
                                 </div>
@@ -83,14 +81,6 @@
                                                 <div class="form-floating mb-1">
                                                     <input type="input" class="form-control" id="floatingInput" placeholder="">
                                                     <label for="floatingInput">Sektor Pekerjaan</label>
-                                                </div>
-                                                <div class="form-floating mb-1">
-                                                    <input type="Date" class="form-control" id="floatingInput" placeholder="">
-                                                    <label for="floatingPassword">Cadangan Tarikh Akad Nikah</label>
-                                                </div>
-                                                <div class="form-floating mb-1">
-                                                    <input type="input" class="form-control" id="floatingInput" placeholder="">
-                                                    <label for="floatingPassword">Kebenaran Jabatan Agama Islam Negeri</label>
                                                 </div>
                                                 <div class="form-floating mb-1">
                                                     <input type="input" class="form-control" id="floatingInput" placeholder="">
@@ -114,6 +104,7 @@
                                         </div>
                                     </div>
                                 </div>
+                            </form>
                             </div>
                         </diV>
                     </div>
