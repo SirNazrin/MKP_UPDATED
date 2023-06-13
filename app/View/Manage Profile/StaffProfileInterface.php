@@ -146,7 +146,7 @@
 				<div class="form-group">
 					<label for="phone"> IC number </label>
 					<input type="number" class="form-control" id="Staff_IC" placeholder="Enter IC number" style="border-radius: 5px;  height:43px ;">
-                    <label for="password"> passowrd </label>
+                    <label for="password"> password </label>
 					<input type="password" class="form-control" id="Staff_Password" placeholder="change Password" style="border-radius: 5px;  height:43px ;">
 				</div>
 			</div>

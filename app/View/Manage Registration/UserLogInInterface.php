@@ -33,8 +33,6 @@
             display: block;
             width: 600px;
             height: 720px;
-
-            position: relative;
             right: 80px;
             position: relative;
             bottom: 150px;
@@ -70,7 +68,7 @@
     <div class="container">
         <div class="left-column">
 
-            <img src="<?= BASEURL ?>/img/BG-JAIP3.png" alt="login">
+            <img src="<?= BASEURL ?>/img/BG-JAIP4.jpg" alt="login">
 
 
 
@@ -87,8 +85,8 @@
                         placeholder="Kala Laluan" required>
                     <label for="floatingPassword"></label>
                     <div class="link">
-                        <a href="<?= BASEURL; ?>/Register" class="button-link">Pennngguna baru? </a>
-                        <a href="<?= BASEURL; ?>/LogIn/ResetPassword" class="button-link">| Lupa kala Laluan?</a>
+                        <a href="<?= BASEURL; ?>/Register" class="button-link">Pengguna baru? </a>
+                        <a href="<?= BASEURL; ?>/LogIn/ResetPassword" class="button-link">| Lupa kata Laluan?</a>
                     </div>
                     <input class="btn btn-primary" type="submit" value="Masuk" style="position:relative; width: 100%">
                 </form>
