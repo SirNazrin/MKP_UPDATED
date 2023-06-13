@@ -38,6 +38,7 @@ class MarriageRegistration extends Controller{
             header('Location: ' . BASEURL . '/LogIn');
         }
     }
+
 }
 
 

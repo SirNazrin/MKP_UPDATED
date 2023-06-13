@@ -40,6 +40,17 @@
                                         <tr class="font12" height="30">
                                         <td>
                                                 <table cellpadding="1" cellspacing="1" align="center" width="100%" >
+
+                                                <tr class="font12" height="30">
+                                                <td>&nbsp; No Resit Bayaran</td>
+                                                <td align="center">:</td>
+                                                <td>
+                                                <input class="form-control" type="text" style="width:220px" name="resitNo" id="resit" maxlength="30" value=""></td>
+                                                </tr>
+
+                                                <tr>
+                                                <input class="btn btn-primary"  type="submit" name="btnCari" class="butang" value="Cari..">
+                                                </tr>
                                                 
                                                 <tr class="font12" height="30">
                                                 <td width="25%">&nbsp; Nama Pasangan</td>
@@ -84,26 +95,15 @@
                                                 </tr>
                                             
                                                 <tr class="font12" height="30">
-                                                <td>&nbsp; No Resit Bayaran</td>
+                                                <td>&nbsp; Pilihan penghantaran</td>
                                                 <td align="center">:</td>
                                                 <td>
                                                 <input class="form-control" type="text" style="width:220px" name="resitNo" id="resit" maxlength="30" value=""></td>
                                                 </tr>
-                                                
-                                                
-                                                <tr class="font12" height="30">
-                                                <td>&nbsp; Pilihan Penghantaran <font class="font12boldmerah">*</font></td>
-                                                <td align="center">:</td>
-                                                <td><select class="form-select" name="DeliveryAddress" style="width:240px" >
-                                                                        <option value="">-Sila Pilih-</option>
-                                                                                                <option value="1" >COD</option>
-                                                                                                <option value="2" >Pungutan Di Pejabat</option>
-                                                                        </select></td>
-                                                </tr>
-
+                                            
                                                 <tr class="font12" height="30">
                                                 <td colspan="3" align="center">
-                                                <input class="btn btn-primary mt-3" type="submit" name="btnHantar" value="Hantar" onclick="window.location.href='<?= BASEURL ?>/MarriageCard/ViewMarriageCardCertificate'">     
+                                                <input class="btn btn-primary mt-3" type="submit" name="btnHantar" value="Hantar">&nbsp;        
                                                 </td>
                                                 </tr>
                                             

@@ -12,7 +12,24 @@ class MarriageCard extends Controller{
         } else {
             header('Location: ' . BASEURL . '/LogIn');
         }
+
+
     }
+
+    public function ViewMarriageCardCertificate(){
+
+
+        if(isset($_SESSION['user_id'])){
+        $data['title'] = 'Marriage Card & Certificate';
+        $this->view('/Template/header', $data);
+        $this->view('Manage MarriageCard/UserViewMarriageCardCertificate', $data);
+        $this->view('/Template/footer');
+    } else {
+        header('Location: ' . BASEURL . '/LogIn');
+    }
+
+    }
+
 }
 
 
