@@ -48,6 +48,10 @@
 
                                     <!-- Form for "Maklumat Pemohon" -->
                                     <div class="form-group">
+                                        <label for="inputName">Nama Pemohon</label>
+                                        <input type="text" class="form-control" id="inputName" value = "<?= $data['user'] ['User_Name'];?>">
+                                    </div>
+                                    <div class="form-group">
                                         <label for="inputIC">No. Kad Pengenalan</label>
                                         <input type="number" class="form-control" id="inputIC" value = "<?= $data['user'] ['UserIC'];?>">
                                     </div>
@@ -62,10 +66,6 @@
                                     <div class="form-group">
                                         <label for="bankname">Nama Bank</label>
                                         <input type="text" class="form-control" id="bankname" placeholder="Nama Bank">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputName">Nama Pemohon</label>
-                                        <input type="text" class="form-control" id="inputName" value = "<?= $data['user'] ['User_Name'];?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="inputAddress">Alamat Semasa</label>
@@ -96,16 +96,16 @@
 
                                     <!-- Form for "Maklumat Pasangan" -->
                                     <div class="form-group">
+                                        <label for="inputSpouseName">Nama Pasangan</label>
+                                        <input type="text" class="form-control" id="inputSpouseName" placeholder="Masukkan nama pasangan">
+                                    </div>
+                                    <div class="form-group">
                                         <label for="inputIC">No. Kad Pengenalan</label>
                                         <input type="number" class="form-control" id="inputIC" placeholder="Masukkan no. kad pengenalan">
                                     </div>
                                     <div class="form-group">
                                         <label for="inputnoPassport">No. Passport/Tentera/Polis</label>
                                         <input type="number" class="form-control" id="inputnoPassport" placeholder="Masukkan No. Passport/Tentera/Polis">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputSpouseName">Nama Pasangan</label>
-                                        <input type="text" class="form-control" id="inputSpouseName" placeholder="Masukkan nama pasangan">
                                     </div>
                                     <div class="form-group">
                                         <label for="inputAddress">Alamat Semasa</label>
