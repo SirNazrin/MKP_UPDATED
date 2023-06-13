@@ -78,120 +78,120 @@
 </style>
 
 <body>
-    <div class="d-flex" id="wrapper">
-        <!-- Sidebar-->
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
 
-        <div class="list-group list-group-flush">
-            <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar, selected-navbar" href="<?= BASEURL; ?>/ManageProfile">Profile</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="<?= BASEURL; ?>/PreCourse">Kursus Pra-Perkahwinan</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="<?= BASEURL; ?>/MarriageApplication">Permohonan Berkahwin</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="<?= BASEURL; ?>/MarriageRegistration">Pendaftaran Perkahwinan</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="<?= BASEURL; ?>/Consultation">Khidmat Nasihat</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="<?= BASEURL; ?>/Incentive/Staffmainpage">Insentif Khas Pasangan Pengantin</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar-keluar" href="<?= BASEURL; ?>/LogIn/">Keluar</a>
-        </div>
-    </div>
-    <!-- Page content wrapper-->
-    <div id="page-content-wrapper">
-        <!-- Page content-->
-        <div class="body-content">
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar, selected-navbar" href="<?= BASEURL; ?>/ManageProfile">Profile</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="<?= BASEURL; ?>/PreCourse">Kursus Pra-Perkahwinan</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="<?= BASEURL; ?>/MarriageApplication">Permohonan Berkahwin</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="<?= BASEURL; ?>/MarriageRegistration">Pendaftaran Perkahwinan</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="<?= BASEURL; ?>/Consultation">Khidmat Nasihat</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="<?= BASEURL; ?>/Incentive">Insentif Khas Pasangan Pengantin</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar-keluar" href="<?= BASEURL; ?>/LogIn/">Keluar</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Page content-->
+                <div class="body-content">
 
-            <!--Padding Between Container Contents & Homepage-->
-            <div style="padding: 20px">
-                <!--Content Container-->
-                <div class="container-M1" style="background-color: #C7DDFE;">
-                    <diV style="background-color:#152C7C; color: white;">
-                        <h3 class="pt-2 pb-2 align-middle" style="padding-left: 12px;">Staff Profile</h3> <!--Content Header-->
-                    </div>
-                    <!--Content of container-->
-
-                    <div class="container">
-                        <div class="row gutters">
-                            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <div class="account-settings">
-                                            <div class="user-profile">
-                                                <div class="user-avatar">
-                                                    <img src="<?= BASEURL ?>/img/user.png" alt="">
-                                                </div>
-                                                <h5 class="user-name" id="Staff_Name">ABDULRAHMAN ALYAFEI</h5>
-                                                <h6 class="user-email" id="Staff_Email">Abdulrahman.bin.gh@gmail.com</h6>
-                                            </div>
-                                            <div class="about">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <!--Padding Between Container Contents & Homepage-->
+                    <div style="padding: 20px">
+                        <!--Content Container-->
+                        <div class="container-M1" style="background-color: #C7DDFE;">
+                            <diV style="background-color:#152C7C; color: white;">
+                                <h3 class = "pt-2 pb-2 align-middle" style="padding-left: 12px;">Staff Profile</h3> <!--Content Header-->
                             </div>
-                            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <div class="row gutters">
-
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                <div class="form-group">
-                                                    <label for="fullName">Full Name</label>
-                                                    <input type="text" class="form-control" id="Staff_Name" placeholder="Enter full name">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                <div class="form-group">
-                                                    <label for="eMail">Email</label>
-                                                    <input type="email" class="form-control" id="Staff_Email" placeholder="Enter email ID" style="border-radius: 5px;  height:43px ;">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                <div class="form-group">
-                                                    <label for="phone"> IC number </label>
-                                                    <input type="number" class="form-control" id="Staff_IC" placeholder="Enter IC number" style="border-radius: 5px;  height:43px ;">
-                                                    <label for="password"> passowrd </label>
-                                                    <input type="password" class="form-control" id="Staff_Password" placeholder="change Password" style="border-radius: 5px;  height:43px ;">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                <div class="form-group">
-
-                                                    <select class="form-control" id="Staff_Gendar" aria-label=".form-select-sm example" style="border-radius: 5px;  height:43px ; position:relative; top:22px;">
-                                                        <option selected>Enter Gender</option>
-                                                        <option value="1">Male</option>
-                                                        <option value="2">Female</option>
-
-                                                    </select>
-                                                    <label for="phone"> Phone number </label>
-                                                    <input class="form-control" id="Staff_PhoneNo" type="text" placeholder="Enter Phone Number" style="position:relative; top:22px;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row gutters">
-
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                <div class="form-group">
-
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                <div class="form-group">
-
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                <div class="form-group">
-
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                                <div class="form-group">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row gutters">
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                <div class="text-right">
-
-                                                    <button type="button" id="update-button" name="submit" class="btn btn-primary" style=" position:relative; top :20px; position:relative; left:160px; width: 20%;
+                                <!--Content of container-->
+                               
+                                <div class="container">
+<div class="row gutters">
+<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+<div class="card h-100">
+	<div class="card-body">
+		<div class="account-settings">
+			<div class="user-profile">
+				<div class="user-avatar">
+                <img src="<?= BASEURL ?>/img/user.png" alt="">
+				</div>
+				<h5 class="user-name" id="Staff_Name">ABDULRAHMAN ALYAFEI</h5>
+				<h6 class="user-email" id="Staff_Email">Abdulrahman.bin.gh@gmail.com</h6>
+			</div>
+			<div class="about">
+				
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+<div class="card h-100">
+	<div class="card-body">
+		<div class="row gutters">
+			
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="form-group">
+					<label for="fullName">Full Name</label>
+					<input type="text" class="form-control" id="Staff_Name" placeholder="Enter full name">
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="form-group">
+					<label for="eMail">Email</label>
+					<input type="email" class="form-control" id="Staff_Email" placeholder="Enter email ID" style="border-radius: 5px;  height:43px ;">
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="form-group">
+					<label for="phone"> IC number </label>
+					<input type="number" class="form-control" id="Staff_IC" placeholder="Enter IC number" style="border-radius: 5px;  height:43px ;">
+                    <label for="password"> passowrd </label>
+					<input type="password" class="form-control" id="Staff_Password" placeholder="change Password" style="border-radius: 5px;  height:43px ;">
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="form-group">
+					
+                    <select class="form-control" id="Staff_Gendar" aria-label=".form-select-sm example" style="border-radius: 5px;  height:43px ; position:relative; top:22px;">
+                                    <option selected>Enter Gender</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                   
+                                  </select>
+                                  <label for="phone"> Phone number </label>
+                    <input class="form-control" id="Staff_PhoneNo" type="text" placeholder="Enter Phone Number" style="position:relative; top:22px;" >
+				</div>
+			</div>
+		</div>
+		<div class="row gutters">
+			
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="form-group">
+					
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="form-group">
+					
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="form-group">
+					
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="form-group">
+					
+				</div>
+			</div>
+		</div>
+		<div class="row gutters">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+				<div class="text-right" >
+					
+					<button type="button" id="update-button" name="submit" class="btn btn-primary" style=" position:relative; top :20px; position:relative; left:160px; width: 20%;
 ">Update</button>
                                                 </div>
                                             </div>

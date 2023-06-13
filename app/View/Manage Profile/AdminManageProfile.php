@@ -1,27 +1,27 @@
  <!-- Top navigation-->
-
- <div class="d-flex" id="wrapper">
-   <!-- Sidebar-->
-   <div class="border-end bg-white" id="sidebar-wrapper">
-     <div class="sidebar-heading" style="background-color: #91BCFD;" ;>
-       <p><b>ID : </b></p>
-       <p><b>NAME : </b></p>
-     </div>
-     <div class="list-group list-group-flush">
-       <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="#!">Profile</a>
-       <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="#!">Kursus Pra-Perkahwinan</a>
-       <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="#!">Permohonan Berkahwin</a>
-       <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="#!">Pendaftaran Perkahwinan</a>
-       <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="#!">Khidmat Nasihat</a>
-       <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="#!">Insentif Khas Pasangan Pengantin</a>
-       <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar, selected-navbar " href="#!">Pengguna</a>
-       <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar-keluar" href="#!">Keluar</a>
-     </div>
-   </div>
-   <!-- Page content wrapper-->
-   <div id="page-content-wrapper">
-     <!-- Page content-->
-     <div class="body-content">
+ 
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading" style="background-color: #91BCFD;";>
+                    <p><b>ID : </b></p>
+                    <p><b>NAME : </b></p>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="#!">Profile</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="#!">Kursus Pra-Perkahwinan</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="#!">Permohonan Berkahwin</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="#!">Pendaftaran Perkahwinan</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="#!">Khidmat Nasihat</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar" href="#!">Insentif Khas Pasangan Pengantin</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar, selected-navbar " href="#!">Pengguna</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3, col-navbar-keluar" href="#!">Keluar</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Page content-->
+                <div class="body-content">
 
        <!--Padding Between Container Contents & Homepage-->
        <div style="padding: 20px">
