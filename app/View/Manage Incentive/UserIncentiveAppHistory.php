@@ -52,23 +52,23 @@
                                                     <td>-</td>
                                                     <td>-</td>
                                                     <td class="text-center">
-                                                        <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
+                                                        <a class="btn" href="<?= BASEURL ?>/Incentive/ApplyIncentive" role="button">
                                                             
                                                         </a>
-                                                        <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
+                                                        <a class="btn" href="<?= BASEURL ?>/Incentive/ApplyIncentive" role="button">
                                                             
                                                         </a>
-                                                        <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
-                                                            
-                                                        </a>
-                                                    </td>
-                                                    <td class="text-center">
-                                                        <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsultExtension" role="button">
+                                                        <a class="btn" href="<?= BASEURL ?>/Incentive/ApplyIncentive" role="button">
                                                             
                                                         </a>
                                                     </td>
                                                     <td class="text-center">
-                                                        <a class="btn" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">
+                                                        <a class="btn" href="<?= BASEURL ?>/Incentive/ApplyIncentive" role="button">
+                                                            
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a class="btn" href="<?= BASEURL ?>/Incentive/ApplyIncentive" role="button">
                                                             
                                                         </a>
                                                     </td>
