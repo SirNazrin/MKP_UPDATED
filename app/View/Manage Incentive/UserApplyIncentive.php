@@ -69,11 +69,11 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="inputAddress">Alamat Semasa</label>
-                                        <input type="text" class="form-control" id="inputAddress" placeholder="Masukkan alamat">
+                                        <input type="text" class="form-control" id="inputAddress" value = "<?= $data['user'] ['User_Address'];?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="inputPhone">No. Telefon</label>
-                                        <input type="text" class="form-control" id="inputPhone" placeholder="Masukkan no. telefon">
+                                        <input type="text" class="form-control" id="inputPhone" value = "<?= $data['user'] ['User_PhoneNo'];?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="inputBirthdate">Tarikh Lahir</label>
@@ -97,11 +97,11 @@
                                     <!-- Form for "Maklumat Pasangan" -->
                                     <div class="form-group">
                                         <label for="inputSpouseName">Nama Pasangan</label>
-                                        <input type="text" class="form-control" id="inputSpouseName" placeholder="Masukkan nama pasangan">
+                                        <input type="text" class="form-control" id="inputSpouseName" value = "<?= $data['userpartner']['UserPartner_Name'];?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="inputIC">No. Kad Pengenalan</label>
-                                        <input type="number" class="form-control" id="inputIC" placeholder="Masukkan no. kad pengenalan">
+                                        <input type="number" class="form-control" id="inputIC" value = "<?= $data['userpartner']['UserPartnerIC'];?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="inputnoPassport">No. Passport/Tentera/Polis</label>
@@ -109,7 +109,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="inputAddress">Alamat Semasa</label>
-                                        <input type="text" class="form-control" id="inputAddress" placeholder="Masukkan alamat">
+                                        <input type="text" class="form-control" id="inputAddress"  value = "<?= $data['userpartner'] ['UserPartner_Address'];?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="inputSpouseSalary">Pendapatan</label>
@@ -117,7 +117,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="inputPhone">No. Telefon</label>
-                                        <input type="text" class="form-control" id="inputPhone" placeholder="Masukkan no. telefon">
+                                        <input type="text" class="form-control" id="inputPhone" value = "<?= $data['userpartner']['UserPartner_PhoneNum'];?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="inputBirthdate">Tarikh Lahir</label>

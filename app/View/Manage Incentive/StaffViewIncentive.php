@@ -68,7 +68,7 @@
                             </tbody>
                         </table>
 
-                        <div class="button-container me-md-3 ">
+                        <div class="button-container me-md-3 S">
                             <input type="button" class="btn btn-danger" value="TERIMA">
                             <input type="button" class="btn btn-danger" style="background-color: red;" value="TOLAK" ">
 
