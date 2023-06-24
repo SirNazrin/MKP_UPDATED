@@ -56,6 +56,16 @@ class PreCourse extends Controller{
         $this->view('/Template/footer');
 
     }
+
+    public function addPrecourseInfo(){
+
+        $data['title'] = 'Kursus Pra-Perkahwinan';
+        $this->view('/Template/header', $data);
+        $this->view('StaffView/StaffAddPrecourseInformation', $data);
+        $this->view('/Template/footer');
+
+    }
+    
 }
 
 
