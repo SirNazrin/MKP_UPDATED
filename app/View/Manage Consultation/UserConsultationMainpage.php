@@ -30,6 +30,7 @@
                                 <a onclick = "return confirm('Kembali Ke Halaman Utama?');" class="btn btn-primary"  style="float: right; margin-right: 10px;" href="<?= BASEURL ?>/Home" role="button">Kembali</a>
                             <div >
                                 <div class="container mt-5">
+                                <?php Flasher::CheckConsult(); ?>
                                     <div class="row mb-3">
                                         <div class="col">
                                             <h6><b>Maklumat Suami</b></h6>
@@ -64,7 +65,7 @@
                                     </div>
                                 </div>
                                 <div class="container" style = "padding: 20px">
-                                <a class="btn btn-primary"  style="margin-bottom: 8px; float: right;" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">Permohonan Baru</a>
+                                <a class="btn btn-primary" style="margin-bottom: 8px; float: right;" href="<?= BASEURL ?>/Consultation/ApplyConsult" role="button">Permohonan Baru</a>
                                     <h6><b>Sejarah Permohonan</b></h6>
                                     <?php
                                         if(!isset($data['consult']['ConsultationRegID'])){
@@ -167,4 +168,29 @@
             </div>
         </div>
 </div>
+<script>
+    function checKApplication(){
+
+        if<?php isset($data['consult']['ConsultationRegID']) ?> {
+            alert("Hello");
+        }
+        <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    }
+</script>
 </body>

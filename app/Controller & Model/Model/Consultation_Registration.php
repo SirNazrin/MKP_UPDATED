@@ -16,6 +16,9 @@ class Consultation_Registration{
         $this->db->bind('UserIC', $_SESSION['user_id']);
         return $this->db->single();
     }
+    public function checkConsult($ConsultRegID){
+        $_SESSION['checkConsult'] = $ConsultRegID;
+    }
 
     
 

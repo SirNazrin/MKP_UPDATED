@@ -18,6 +18,8 @@ class User_Info{
         return $this->db->single();
     }
 
+
+
 }
 
 ?>

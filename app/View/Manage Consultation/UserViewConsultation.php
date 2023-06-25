@@ -33,20 +33,20 @@
                                         <div class="col-6">
                                             <h6><b>Maklumat Suami</b><h6>
                                             <div class="container">
-                                                <div class="form-floating mb-1">
-                                                    <input type="email" class="form-control" id="floatingInput" placeholder="Name" readonly>
+                                                <div class="form-floating mb-1" style="background-color: transparent;">
+                                                    <input value = "<?= $data['user']['User_Name']; ?>" type="text" class="form-control" id="floatingInput" placeholder="Name" readonly>
                                                     <label for="floatingInput">Name</label>
                                                 </div>
                                                 <div class="form-floating mb-1">
-                                                    <input type="password" class="form-control" id="floatingPassword" placeholder="No. Kad Pengenalan" readonly>
+                                                    <input value = "<?= $data['user']['UserIC']; ?>" type="text" class="form-control" id="floatingPassword" placeholder="No. Kad Pengenalan" readonly>
                                                     <label for="floatingPassword">No. Kad Pengenalan</label>
                                                 </div>
                                                 <div class="form-floating mb-1">
-                                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Alamat" readonly>
+                                                    <input value = "<?= $data['user']['User_Address']; ?>" type="text" class="form-control" id="floatingPassword" placeholder="Alamat" readonly>
                                                     <label for="floatingPassword">Alamat</label>
                                                 </div>
                                                 <div class="form-floating mb-1">
-                                                    <input type="password" class="form-control" id="floatingPassword" placeholder="No.Telefon Bimbit" readonly>
+                                                    <input value = "<?= $data['user']['User_PhoneNo']; ?>" type="text" class="form-control" id="floatingPassword" placeholder="No.Telefon Bimbit" readonly>
                                                     <label for="floatingPassword">No. Telefon Bimbit</label>
                                                 </div>
                                             </div>
@@ -55,19 +55,19 @@
                                             <h6><b>Maklumat Isteri</b><h6>
                                             <div class="container">
                                                 <div class="form-floating mb-1">
-                                                    <input type="email" class="form-control" id="floatingInput" placeholder="Name" readonly>
+                                                    <input value = "<?= $data['userpartner']['UserPartner_Name']; ?>" type="text" class="form-control" id="floatingInput" placeholder="Name" readonly>
                                                     <label for="floatingInput">Name</label>
                                                 </div>
                                                 <div class="form-floating mb-1">
-                                                    <input type="password" class="form-control" id="floatingPassword" placeholder="No. Kad Pengenalan" readonly>
+                                                    <input value = "<?= $data['userpartner']['UserPartnerIC']; ?>" type="text" class="form-control" id="floatingPassword" placeholder="No. Kad Pengenalan" readonly>
                                                     <label for="floatingPassword">No. Kad Pengenalan</label>
                                                 </div>
                                                 <div class="form-floating mb-1">
-                                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Alamat" readonly>
+                                                    <input value = "<?= $data['userpartner']['UserPartner_Address']; ?>" type="text" class="form-control" id="floatingPassword" placeholder="Alamat" readonly>
                                                     <label for="floatingPassword">Alamat</label>
                                                 </div>
                                                 <div class="form-floating mb-1">
-                                                    <input type="password" class="form-control" id="floatingPassword" placeholder="No.Telefon Bimbit" readonly>
+                                                    <input value = "<?= $data['userpartner']['UserPartner_PhoneNum']; ?>" type="text" class="form-control" id="floatingPassword" placeholder="No.Telefon Bimbit" readonly>
                                                     <label for="floatingPassword">No. Telefon Bimbit</label>
                                                 </div>
                                             </div>
@@ -88,13 +88,13 @@
                                         <div class="row">
                                             <div class="col-4">
                                             <div class="form-floating mb-1">
-                                                    <input type="text" class="form-control" id="floatingPassword" readonly>
+                                                    <input value = "<?= $data['consult']['PurposeOfConsult']; ?>" type="text" class="form-control" id="floatingPassword" readonly>
                                                 </div>
                                             </div>
                                             <div class="col-4">
                                                 <div class="form-floating mb-1">
-                                                    <input type="text" class="form-control" id="floatingPassword" placeholder="Lain-Lain" readonly>
-                                                    <label for="floatingPassword">Lain-Lain</label>
+                                                    <input type="text" class="form-control" id="floatingPassword" readonly>
+                                                    <label for="floatingPassword">Lain-Lain (jika ada)</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -113,12 +113,12 @@
                                         <div class="row">
                                             <div class="col-5">
                                                 <div class="mb-3">
-                                                        <textarea readonly class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                <input value = "<?= $data['consult']['ComplaintOfConsult']; ?>"type="text" class="form-control" id="floatingPassword" readonly>
                                                     </div>
                                                 </div>
                                             <div class="col-5">
                                                 <div class="mb-3">
-                                                    <textarea readonly class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <input value = "<?= $data['consult']['SolutionTaken']; ?>"type="text" class="form-control" id="floatingPassword" readonly>
                                                 </div>
                                             </div>
                                         </div>

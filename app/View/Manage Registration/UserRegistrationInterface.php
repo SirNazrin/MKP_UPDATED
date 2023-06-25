@@ -132,10 +132,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <select class="form-select form-select-sm" name="User_Role"
                                 aria-label=".form-select-sm example">
                                 <option selected>Role</option>
-                                <option value="1">User</option>
-                                <option value="2">Admin</option>
-                                <option value="3">Staff</option>
-                                <option value="4">Advisor</option>
+                                <option value="USER">User</option>
+                                <option value="STAFF">Staff</option>
+                                <option value="ADVISOR">Advisor</option>
                             </select><br>
                             <input class="form-control" name="User_Password" type="password"
                                 placeholder="Password"><br>

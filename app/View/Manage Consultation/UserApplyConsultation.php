@@ -22,7 +22,7 @@
                         <!--Content Container-->
                         <div class="container-M1" style="background-color: #C7DDFE;">
                             <diV style="background-color:#152C7C; color: white;">
-                                <h3 class = "pt-2 pb-2 align-middle" style="padding-left: 12px;">Khidmat Nasihat - Permohonan Baru</h3> <!--Content Header-->
+                                <h3 class = "pt-2 pb-2 align-middle" style="padding-left: 12px;">Khidmat Nasihat - Permohonan</h3> <!--Content Header-->
                             </div>
                                 <!--Content of container-->
                                 <a class="btn btn-primary"  style="float: right; margin-right: 10px;" href="<?= BASEURL ?>/Consultation" role="button">Kembali</a>
@@ -34,19 +34,19 @@
                                             <h6><b>Maklumat Suami</b><h6>
                                             <div class="container">
                                                 <div class="form-floating mb-1">
-                                                    <input type="email" class="form-control" id="floatingInput" placeholder="Name">
+                                                    <input value = "<?= $data['user']['User_Name']; ?>" type="text" class="form-control" id="floatingInput" placeholder="Name">
                                                     <label for="floatingInput">Name</label>
                                                 </div>
                                                 <div class="form-floating mb-1">
-                                                    <input type="password" class="form-control" id="floatingPassword" placeholder="No. Kad Pengenalan">
+                                                    <input value = "<?= $data['user']['UserIC']; ?>" type="text" class="form-control" id="floatingPassword" placeholder="No. Kad Pengenalan">
                                                     <label for="floatingPassword">No. Kad Pengenalan</label>
                                                 </div>
                                                 <div class="form-floating mb-1">
-                                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Alamat">
+                                                    <input value = "<?= $data['user']['User_Address']; ?>" type="text" class="form-control" id="floatingPassword" placeholder="Alamat">
                                                     <label for="floatingPassword">Alamat</label>
                                                 </div>
                                                 <div class="form-floating mb-1">
-                                                    <input type="password" class="form-control" id="floatingPassword" placeholder="No.Telefon Bimbit">
+                                                    <input value = "<?= $data['user']['User_PhoneNo']; ?>" type="text" class="form-control" id="floatingPassword" placeholder="No.Telefon Bimbit">
                                                     <label for="floatingPassword">No. Telefon Bimbit</label>
                                                 </div>
                                             </div>
@@ -55,19 +55,19 @@
                                             <h6><b>Maklumat Isteri</b><h6>
                                             <div class="container">
                                                 <div class="form-floating mb-1">
-                                                    <input type="email" class="form-control" id="floatingInput" placeholder="Name">
+                                                    <input value = "<?= $data['userpartner']['UserPartner_Name']; ?>" type="text" class="form-control" id="floatingInput" placeholder="Name">
                                                     <label for="floatingInput">Name</label>
                                                 </div>
                                                 <div class="form-floating mb-1">
-                                                    <input type="password" class="form-control" id="floatingPassword" placeholder="No. Kad Pengenalan">
+                                                    <input value = "<?= $data['userpartner']['UserPartnerIC']; ?>" type="text" class="form-control" id="floatingPassword" placeholder="No. Kad Pengenalan">
                                                     <label for="floatingPassword">No. Kad Pengenalan</label>
                                                 </div>
                                                 <div class="form-floating mb-1">
-                                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Alamat">
+                                                    <input value = "<?= $data['userpartner']['UserPartner_Address']; ?>" type="text" class="form-control" id="floatingPassword" placeholder="Alamat">
                                                     <label for="floatingPassword">Alamat</label>
                                                 </div>
                                                 <div class="form-floating mb-1">
-                                                    <input type="password" class="form-control" id="floatingPassword" placeholder="No.Telefon Bimbit">
+                                                    <input value = "<?= $data['userpartner']['UserPartner_PhoneNum']; ?>" type="text" class="form-control" id="floatingPassword" placeholder="No.Telefon Bimbit">
                                                     <label for="floatingPassword">No. Telefon Bimbit</label>
                                                 </div>
                                             </div>
@@ -90,7 +90,7 @@
                                                 <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                                                     <option selected>Pilih Tujuan Pengaduan</option>
                                                     <option value="Khidmat Nasihat">Khidmat Nasihat</option>
-                                                    <option value="Khidmat Nasihat">Khidmat Nasihat</option>
+                                                    <option value="Khidmat Nasihat">Penceraian</option>
                                                     <option value="Lain-Lain">Lain-Lain</option>
                                                 </select>
                                             </div>

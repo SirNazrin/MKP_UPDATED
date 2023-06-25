@@ -10,4 +10,7 @@ class Register extends Controller{
         $this->view('/Template/footer');
 
     }
+
+
+
 }
